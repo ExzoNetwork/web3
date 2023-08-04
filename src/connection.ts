@@ -2398,11 +2398,11 @@ export class Connection {
   /**
    * Fetch the accounts for the specified owner key
    */
-  async getVelasAccountsByOwnerKey(
+  async getexzoAccountsByOwnerKey(
     publicKey: string,
   ): Promise<any> {
     try {
-      const res = await this._rpcRequest('getVelasAccountsByOwnerKey', [publicKey]);
+      const res = await this._rpcRequest('getexzoAccountsByOwnerKey', [publicKey]);
       return res.result.value
     } catch (e) {
       throw new Error('failed to get account by owner key ' + publicKey + ': ' + e);
@@ -2412,11 +2412,11 @@ export class Connection {
   /**
    * Fetch the accounts for the specified operational key
    */
-     async getVelasAccountsByOperationalKey(
+     async getexzoAccountsByOperationalKey(
       publicKey: string,
     ): Promise<any> {
       try {
-        const res = await this._rpcRequest('getVelasAccountsByOperationalKey', [publicKey]);
+        const res = await this._rpcRequest('getexzoAccountsByOperationalKey', [publicKey]);
         return res.result.value
       } catch (e) {
         throw new Error('failed to get account by operational key ' + publicKey + ': ' + e);
@@ -3386,7 +3386,7 @@ export class Connection {
    * import { Connection, PublicKey, LAMPORTS_PER_SOL } from "@solana/web3.js";
    *
    * (async () => {
-   *   const connection = new Connection("https://api.testnet.solana.com", "confirmed");
+   *   const connection = new Connection("http://rpc-test-1.exzo.network", "confirmed");
    *   const myAddress = new PublicKey("2nr1bHFT86W9tGnyvmYW4vcHKsQB3sVQfnddasz4kExM");
    *   const signature = await connection.requestAirdrop(myAddress, LAMPORTS_PER_SOL);
    *   await connection.confirmTransaction(signature);

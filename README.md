@@ -1,35 +1,35 @@
 
 # JavaScript API
 
-This is the Velas Javascript API built on [JSON RPC API](https://docs.velas.com/apps/javascript-api)
+This is the exzo Javascript API built on [JSON RPC API](https://docs.exzo.com/apps/javascript-api)
 
 ## Installation
 
 ### Yarn
 
 ```
-$ yarn add @velas/web3
+$ yarn add @exzo/web3
 ```
 
 ### npm
 
 ```
-$ npm install --save @velas/web3
+$ npm install --save @exzo/web3
 ```
 
 ### Browser bundle
 
 ```html
 <!-- Development (un-minified) -->
-<script src="https://unpkg.com/@velas/web3.js@0.92.0/lib/index.iife.js"></script>
+<script src="https://unpkg.com/@exzo/web3.js@0.92.0/lib/index.iife.js"></script>
 
 <!-- Production (un-minified) -->
-<script src="https://unpkg.com/@velas/web3.js@0.92.0/lib/index.iife.min.js"></script>
+<script src="https://unpkg.com/@exzo/web3.js@0.92.0/lib/index.iife.min.js"></script>
 ```
 
 ## Development Environment Setup
 
-Install the latest Velas release from https://docs.velas.com/cli/install-velas-cli-tools
+Install the latest exzo release from https://docs.exzo.com/cli/install-exzo-cli-tools
 
 ### BPF program development
 
@@ -40,22 +40,22 @@ Install the latest Velas release from https://docs.velas.com/cli/install-velas-c
 ### Javascript
 
 ```js
-const velasWeb3 = require('@velas/web3.js');
-console.log(velasWeb3);
+const exzoWeb3 = require('@exzo/web3.js');
+console.log(exzoWeb3);
 ```
 
 ### ES6
 
 ```js
-import velasWeb3 from '@velas/web3.js';
-console.log(velasWeb3);
+import exzoWeb3 from '@exzo/web3.js';
+console.log(exzoWeb3);
 ```
 
 ### Browser bundle
 
 ```js
-// `velasWeb3` is provided in the global namespace by the `velasWeb3.min.js` script bundle.
-console.log(velasWeb3);
+// `exzoWeb3` is provided in the global namespace by the `exzoWeb3.min.js` script bundle.
+console.log(exzoWeb3);
 ```
 ## Examples
 
@@ -80,8 +80,8 @@ node_modules/@solana/web3.js/module.flow.js
 ```
 
 ## Releases
-Releases are available on [Github](https://github.com/velas/web3.js/releases)
-and [npmjs.com](https://www.npmjs.com/package/@velas/web3.js)
+Releases are available on [Github](https://github.com/exzo/web3.js/releases)
+and [npmjs.com](https://www.npmjs.com/package/@exzo/web3.js)
 
 Each Github release features a tarball containing API documentation and a
 minified version of the module suitable for direct use in a browser environment
